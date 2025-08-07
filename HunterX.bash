@@ -10,18 +10,6 @@ echo "Starting HunterX for domain: $DOMAIN"
 
 SubdomainsFile="subdomains.txt"
 HttpxFile="httpx.txt"
-NmapFile="nmap.txt"#!/bin/bash
-# HunterX - A Bash script to perform domain reconnaissance created by Abdallah Safan
-if [ -z "$1" ]; then
-  echo "Usage: $0 <domain>"
-  exit 1
-fi
-
-DOMAIN="$1"
-echo "Starting HunterX for domain: $DOMAIN"
-
-SubdomainsFile="subdomains.txt"
-HttpxFile="httpx.txt"
 NmapFile="nmap.txt"
 SubzyFile="subzy.txt"
 LiveFile="live.txt"
