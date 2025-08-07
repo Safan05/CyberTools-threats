@@ -27,3 +27,15 @@ The authors do not condone or support any misuse of this tool. You are responsib
 
 By using this tool, you agree to use it only in environments you own or have explicit written permission to test.
 Unauthorized use is illegal and punishable by law.
+
+📦 Tools Used
+
+HunterX leverages the following open-source tools:
+
+- **[Subfinder](https://github.com/projectdiscovery/subfinder)** – Subdomain enumeration
+- **[Assetfinder](https://github.com/tomnomnom/assetfinder)** – Subdomain discovery
+- **[Httpx](https://github.com/projectdiscovery/httpx)** – HTTP probing and fingerprinting
+- **[Nmap](https://nmap.org/)** – Network and port scanner
+- **[Subzy](https://github.com/LukaSikic/subzy)** – Subdomain takeover detection
+
+All respective tools retain their original licenses. This project does not modify them and only uses them via their public CLI interfaces.

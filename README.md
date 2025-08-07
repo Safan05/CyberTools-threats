@@ -31,12 +31,7 @@ This repository contains open-source cybersecurity tools and malware samples for
 - File decryption functionality
 - Overwrites original files with encrypted versions
 
-### Tools
-
-*Additional cybersecurity tools will be added to this section as the repository grows.*
-
-## Installation & Requirements
-
+**installation:**
 ```bash
 # Install required dependencies
 pip install pycryptodome
@@ -44,6 +39,36 @@ pip install pycryptodome
 # Clone the repository
 git clone https://github.com/yourusername/CyberTools-threats.git
 cd CyberTools-threats
+```
+### Tools
+
+#### 1. HunterX (`hunterx.sh`)
+- **Type**: Reconnaissance and vulnerability discovery
+- **Purpose**: Automates subdomain enumeration, port scanning, HTTP probing, and takeover detection
+
+**Features:**
+- Uses `subfinder` and `assetfinder` for subdomain enumeration
+- Filters and checks live HTTP/S targets with `httpx`
+- Port scanning with `nmap`
+- Detects potential subdomain takeovers with `subzy`
+- Custom subdomain support and clean output files
+
+**Installation:**
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/CyberTools-threats.git
+cd CyberTools-threats
+
+# Install required tools
+go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install github.com/tomnomnom/assetfinder@latest
+go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+go install github.com/LukaSikic/subzy@latest
+sudo apt install nmap
+
+#usage example
+chmod +x hunterx.sh
+./hunterx.sh example.com
 ```
 
 ## Usage Guidelines
